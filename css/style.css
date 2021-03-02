@@ -1,0 +1,208 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index:999;
+}
+.menu * {
+  box-sizing: border-box;
+}
+.menu .ul-list {
+  display: flex;
+}
+.menu .ul-list > li {
+  position: relative;
+  padding:0 20px;
+}
+.menu .ul-list > li:last-child {
+  border-right: none;
+}
+.menu .ul-list > li > a {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: #172026;
+}
+.menu .ul-list > li > a.active{ color:#00a7b3;}
+.menu .ul-list > li > span {
+      position: absolute;
+    right: -4px;
+    top: 7px;
+    height: 12px;
+    width: 24px;
+    background: url(../img/hot.160800df.svg) 50% no-repeat;
+}
+.menu .ul-list > li:hover .ol-list {
+  display: block;
+}
+.menu .ol-list {
+  min-width: 240px;
+    background: #fff;
+    border: 1px solid #c3ddc5;
+    -webkit-box-shadow: 0 6px 12px rgba(65,74,72,.08);
+    box-shadow: 0 6px 12px rgba(65,74,72,.08);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px 0;
+    margin-top: -2px;
+    margin-left: 15px;
+	display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  z-index: 999;
+}
+.menu .ol-list > li > a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #172026;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  text-align:left;
+  padding:0 10px;
+}
+.menu .ol-list > li > a:hover {
+  background: #eefcf4;
+}
+
+
+
+
+@charset "utf-8";
+/* banner */
+.c-banner{
+	width: 100%;
+	position: relative;
+	height:380px;
+}
+
+.c-banner .banner ul{
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+.c-banner .banner ul li{
+   position:relative;
+   overflow:hidden;
+	
+}
+
+.c-banner .banner ul li img{
+	position: absolute;
+     top:0;
+     left:50%;
+     height:100%;
+     transform:translateX(-50%);
+	position: absolute;
+	top: 0px;
+}
+.c-banner .banner ul li:first-child img{
+	position: relative;
+}
+.c-banner .nexImg,.c-banner .preImg{
+	padding: 25px 10px 25px 10px;
+	position: absolute;
+	top: 50%;
+	margin-top: -53px;
+	background: #000000;
+	opacity: 0.5;
+	border-radius: 5px;
+	z-index: 10;
+	
+}
+.c-banner .nexImg:hover,.c-banner .preImg:hover{
+	opacity: 0.8;
+}
+.c-banner .nexImg{
+	right: 0px;
+}
+.c-banner .nexImg img,.c-banner .preImg img{
+	
+	
+}
+.c-banner .jumpBtn{
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+}
+.c-banner .jumpBtn ul{
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+.c-banner .jumpBtn ul li{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: white;
+	opacity: 0.9;
+	margin-left: 10px;
+}
+.c-banner .jumpBtn ul li:first-child{
+	margin-left: 0px;
+}
+@media screen and (max-width:768px) {
+	.c-banner{
+		width: 100%;
+		height: 345px;
+		overflow: hidden;
+	}
+	.c-banner .banner ul li img{
+		width: 768px;
+		height: 345px;
+		position: absolute;
+		left: 50%;
+		margin-left: -384px;
+	}
+}
