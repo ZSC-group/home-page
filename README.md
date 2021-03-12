@@ -1,2 +1,2 @@
 # home-page
-home page of zsc chain
+home page of Zenith Smart Chain
